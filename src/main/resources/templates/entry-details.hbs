@@ -1,0 +1,34 @@
+{{#partial "content"}}
+	<a href="/">Return to home page</a>
+   <h2>Title: {{entry.title}}</h2>
+   <h2>Blog Entry: {{entry.body}}</h2>
+   <h3>Creation date: {{entry.date}}</h3>
+   <a href="/editBlog/{{entry.slug}}">Edit Blog</a>
+   <hr>
+   <h3 class="comments">Comments:</h3>
+   {{#if entry.comments}}
+   <ul>
+      {{#each entry.comments}}
+      <li>
+         <p>Comment: {{comment}}</p>
+         <p>By: {{name}}</p>
+      </li>
+      {{/each}}
+   </ul>
+   {{else}}
+   <p>There are no comments</p>
+   {{/if}}
+   <hr>
+   <h3>Add Comment Below!</h3>
+   
+   <div class="form">
+      <h1>New Comment</h1>
+      <form action="/addComment/{{entry.slug}}" method="post">
+         <input type="text" name="name" placeholder="Your Name" />
+         <textarea rows="7" name="comment" placeholder="Type your Message"></textarea>
+         <input type="submit" value="Add Comment" />
+      </form>
+   </div>
+
+{{/partial}}
+{{> base.hbs}}

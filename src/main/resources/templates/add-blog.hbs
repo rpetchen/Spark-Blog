@@ -1,0 +1,19 @@
+{{#partial "content"}}
+
+   <h2>New Blog Entry</h2>
+   <a href="/">Return to home page</a>
+  <hr>
+  
+   <div class="formBlog">
+      <form action="/addBlog" method="post">
+      <label for="blogTitle">Blog Title:</label>
+         <input type="text" name="blogTitle" placeholder="Tell me" />
+       <label for="blogBody">Blog Body:</label>
+         <textarea rows="7" name="blogBody" placeholder="What's up?"></textarea>
+         <input type="submit" value="Create Blog" />
+      </form>
+   </div>
+
+
+{{/partial}}
+{{> base.hbs}}

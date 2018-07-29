@@ -1,0 +1,20 @@
+{{#partial "content"}}
+  
+<h1>Blog Entries</h1>
+<ul>
+ {{#each blogEntries}}
+<li>
+<h2><a href="/entry/{{slug}}">{{title}}</a></h2>
+
+	<P>Creation Date: {{date}}<P>
+</li>
+
+
+  {{/each}}
+  
+  <hr>
+  <h3><a href="/addBlog">Add new entry!</a></h3>
+{{/partial}}
+
+{{> base.hbs}}
+

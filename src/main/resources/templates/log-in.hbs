@@ -1,0 +1,17 @@
+{{#partial "content"}}
+
+   <h2>Log In</h2>
+   <a href="/">Return to home page</a>
+  <hr>
+  <p>In order to add or edit blog posts you are requried to provide a password</p>
+   <div class="formBlog">
+      <form action="/logIn" method="post">
+      <label for="password">Password:</label>
+         <input type="text" name="password" placeholder="password" />
+         <button>Sign in</button>
+      </form>
+   </div>
+
+
+{{/partial}}
+{{> base.hbs}}

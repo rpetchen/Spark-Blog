@@ -1,0 +1,58 @@
+
+.container{
+	
+	width: 75%;
+}
+
+
+
+.form,
+.formBlog {
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+    
+    border-radius: 20px;
+}
+
+.form h1{
+    background: #43D1AF;
+    padding: 10px ;
+    font-size: 140%;
+    font-weight: 200;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+   border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.form input[type="text"],
+.form textarea,
+.formBlog input[type="text"],
+.formBlog textarea
+{
+
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+
+.flash_message {
+	 color: #D8000C;
+    background-color: #FFD2D2;
+    margin-top: 25px;
+    font-size:2em;
+    
+}
+ 
